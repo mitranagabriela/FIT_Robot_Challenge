@@ -1,9 +1,0 @@
-topic: ~Say_hello()
-language: enu
-
-u:(Hello) Hello, what is your name?
-    u1:(* my name is *) Nice to meet you! Today I want to play a game. Do you want to play with me?
-        u2:(Yes) Great! I saw some kids throwing a ball and I want to learn how to play too! Can you teach me?
-            u3:(["Yes" "Sure" "I will teach you" "No problem"])
-            u3: (["No "No sure" "I don't know how"])
-        u2:(No) Sorry, but you have no choice!

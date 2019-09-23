@@ -7,9 +7,11 @@
     <Dialogs>
         <Dialog name="Say_hello" src="Say_hello/Say_hello.dlg" />
     </Dialogs>
-    <Resources />
+    <Resources>
+        <File name="" src=".metadata" />
+    </Resources>
     <Topics>
-        <Topic name="Say_hello_enu" src="Say_hello/Say_hello_enu.top" topicName="" language="C" />
+        <Topic name="Say_hello_enu" src="Say_hello/Say_hello_enu.top" topicName="Say_hello" language="en_US" />
     </Topics>
     <IgnoredPaths />
 </Package>
