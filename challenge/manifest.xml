@@ -12,6 +12,18 @@
  <contents>
   <behaviorContent path="behavior_1">
    <nature>interactive</nature>
+   <names>
+    <name lang="en_US">Start_Dialog</name>
+   </names>
+   <descriptions>
+    <description lang="en_US">Detect user's face, and start dialog</description>
+   </descriptions>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[(('Launchpad/NumPeopleZone2' > 0) ~ 5)
+&& ('Launchpad/PreviousActivity' !="<beginning_dialog-746ca1>/behavior_1")]]></condition>
+   </autonomous>
    <permissions/>
   </behaviorContent>
  </contents>
