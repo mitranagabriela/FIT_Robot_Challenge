@@ -3160,7 +3160,7 @@ class MyClass(GeneratedClass):
 			"Danish" : " Hej ",
 			"German" : " Hallo ",
 			"Greek" : "  ",
-			"English" : " Hmmmm, I don\'t seem to remember the answear now. Let me think about it. ",
+			"English" : " Hmmmm, I don\'t seem to remember the answer now. Let me think about it. ",
 			"Spanish" : " Hola ",
 			"Finnish" : " Hei ",
 			"French" : " Bonjour ",
@@ -3200,7 +3200,7 @@ class MyClass(GeneratedClass):
                                                         <![CDATA[]]>
 </greek>
                                                     <english>
-                                                        <![CDATA[Hmmmm, I don't seem to remember the answear now. Let me think about it.]]>
+                                                        <![CDATA[Hmmmm, I don't seem to remember the answer now. Let me think about it.]]>
 </english>
                                                     <spanish>
                                                         <![CDATA[Hola]]>
@@ -4998,7 +4998,7 @@ class MyClass(GeneratedClass):
                                                     <chinese>
                                                         <![CDATA[]]>
 </chinese>
-                                                    <language>6</language>
+                                                    <language>5</language>
                                                 </pluginContent>
                                                 <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
                                                 <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Data is sent on the output when this input is stimulated." id="2" />
@@ -5245,7 +5245,7 @@ class MyClass(GeneratedClass):
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                             <Parameter name="X (m)" inherits_from_parent="0" content_type="2" value="0.001" default_value="1" min="0.001" max="10" tooltip="X coordinate of the target to look at." id="5" />
                             <Parameter name="Y (m)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-10" max="10" tooltip="Y coordinate of the target to look at." id="6" />
-                            <Parameter name="Z (m)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-10" max="10" tooltip="Z coordinate of the target to look at." id="7" />
+                            <Parameter name="Z (m)" inherits_from_parent="0" content_type="2" value="-10" default_value="0" min="-10" max="10" tooltip="Z coordinate of the target to look at." id="7" />
                             <Parameter name="Speed (%)" inherits_from_parent="0" content_type="1" value="28" default_value="50" min="1" max="100" tooltip="Speed to move the head towards the desired position." id="8" />
                             <Parameter name="WholeBody" inherits_from_parent="0" content_type="0" value="0" default_value="0" tooltip="Use whole body constraints" id="9" />
                             <Parameter name="Frame" inherits_from_parent="0" content_type="3" value="Torso" default_value="Torso" custom_choice="0" tooltip="Select the frame of target." id="10">
@@ -5299,7 +5299,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Start the Delay box with the configured timeout value." id="2" />
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stop the wait and stimulate the output." id="3" />
                             <Output name="timerOutput" type="1" type_size="1" nature="1" inner="0" tooltip="Send a bang once delay set in parameters is elapsed, or if the box is stopped and the appropriate parameter is set." id="4" />
-                            <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="2" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
+                            <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="1" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                             <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
                         </Box>
                         <Box name="Say (14)" id="38" localization="8" tooltip="Say some text. Note that you must open the box to enter the text." x="1100" y="60">
@@ -5511,7 +5511,7 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Speech" type="Lock" timeout="0" />
                         </Box>
-                        <Box name="Play Sound" id="32" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="2482" y="1132">
+                        <Box name="Play Sound" id="32" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="2464" y="1122">
                             <bitmap>media/images/box/interaction/play_music.png</bitmap>
                             <script language="4">
                                 <content>
@@ -5538,7 +5538,7 @@ class MyClass(GeneratedClass):
                             <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Starts the music." id="2" />
                             <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stops the music." id="3" />
                             <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished or stopped." id="4" />
-                            <Parameter name="File name" inherits_from_parent="0" content_type="4" value="" default_value="" tooltip="Name of the file you want to play.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project content or import&#x0A;new files to the project." id="5" />
+                            <Parameter name="File name" inherits_from_parent="0" content_type="4" value="/ttsMP3.com_VoiceText_2019-9-26_16_52_53.mp3" default_value="" tooltip="Name of the file you want to play.&#x0A;&#x0A;Note: You can click on the folder icon to browse the project content or import&#x0A;new files to the project." id="5" />
                             <Parameter name="Begin position (s)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="0" max="600" tooltip="Position in seconds where the playing must start." id="6" />
                             <Parameter name="Volume (%)" inherits_from_parent="0" content_type="1" value="100" default_value="100" min="0" max="100" tooltip="Volume the file is played with." id="7" />
                             <Parameter name="Balance L/R" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-1" max="1" tooltip="Value which determines if the sound is played more on the robot&apos;s left or right.&#x0A;You can particularly set it to:&#x0A;- -1 to play only on the left loudspeaker.&#x0A;- 0 to play on both loudspeakers.&#x0A;- 1 to play only on the right loudspeaker." id="8" />
@@ -5632,6 +5632,54 @@ class MyClass(GeneratedClass):
                             </Timeline>
                             <Resource name="Audio player" type="Lock" timeout="0" />
                         </Box>
+                        <Box name="Delay (4)" id="39" localization="8" tooltip="Wait a moment before triggering the output. &#x0A;Can be stopped anytime. &#x0A;Multiple inputs will trigger multiple outputs." x="2602" y="1136">
+                            <bitmap>media/images/box/wait.png</bitmap>
+                            <script language="4">
+                                <content>
+                                    <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.delayed = []
+
+    def onUnload(self):
+        self.cancelDelays()
+
+    def cancelDelays(self):
+        cancel_list = list(self.delayed)
+        for d in cancel_list:
+            d.cancel()
+
+    def cleanDelay(self, fut, fut_ref):
+        self.delayed.remove(fut)
+
+    def triggerOutput(self):
+        self.timerOutput()
+
+    def onInput_onStart(self):
+        import qi
+        import functools
+        delay_future = qi.async(self.triggerOutput, delay=int(self.getParameter("Timeout (s)") * 1000 * 1000))
+        # keep the async operation in an array for cancel
+        # and remove it when it is finished in the callback
+        self.delayed.append(delay_future)
+        bound_clean = functools.partial(self.cleanDelay, delay_future)
+        delay_future.addCallback(bound_clean)
+
+    def onInput_onStop(self):
+        if self.getParameter("Trigger timerOutput if cancelled") and self.delayed:
+            self.timerOutput()
+        self.onUnload()]]>
+</content>
+                            </script>
+                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                            <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Start the Delay box with the configured timeout value." id="2" />
+                            <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stop the wait and stimulate the output." id="3" />
+                            <Output name="timerOutput" type="1" type_size="1" nature="1" inner="0" tooltip="Send a bang once delay set in parameters is elapsed, or if the box is stopped and the appropriate parameter is set." id="4" />
+                            <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="2" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
+                            <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently delaying at least one signal and cancelled, output will be stimulated." id="6" />
+                        </Box>
                         <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
                         <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="6" />
                         <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="5" />
@@ -5694,7 +5742,8 @@ class MyClass(GeneratedClass):
                         <Link inputowner="14" indexofinput="2" outputowner="38" indexofoutput="4" />
                         <Link inputowner="37" indexofinput="2" outputowner="6" indexofoutput="4" />
                         <Link inputowner="32" indexofinput="2" outputowner="31" indexofoutput="4" />
-                        <Link inputowner="33" indexofinput="2" outputowner="32" indexofoutput="4" />
+                        <Link inputowner="39" indexofinput="2" outputowner="32" indexofoutput="4" />
+                        <Link inputowner="33" indexofinput="2" outputowner="39" indexofoutput="4" />
                     </Diagram>
                 </BehaviorKeyframe>
             </BehaviorLayer>
