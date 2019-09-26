@@ -4,6 +4,7 @@
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="Initial_dialog" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="Quiz" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="Test" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
